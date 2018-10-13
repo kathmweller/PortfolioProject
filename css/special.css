@@ -1,0 +1,138 @@
+
+body {
+   background-color: white;
+} 
+
+.wrapper {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+hr { 
+	margin: 0 0 0 auto;
+	border: solid;
+    height: 3px;
+	width: 75%;
+	background-color: black;	
+}
+
+#symbol {
+	width: 50px;
+	height: 50px;
+	top: 4%;
+	left: 25%;
+	position: absolute;
+}
+
+.title {
+	width: 100%;
+	text-align: right;
+	font-family: Bookman Old Style;
+	font-size: 18px; 
+}
+
+.container {
+	width: 100%;
+	display: flex-wrap;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+
+.container2 {
+	float: left;
+	padding: 10px;
+}
+
+
+
+#mainimage {
+   width: 100%;
+   height: 300px;
+   background-color: blue;
+   margin-left: 25%;
+}
+
+#image1 {
+	height: 200px;
+	width: 250px;
+	margin-left: 25%;
+	position: absolute;
+		
+}
+
+#image2 {
+	height: 200px;
+	width: 250px;
+	margin-left: 40%;
+	position: absolute;
+				
+}
+
+#image3  {
+	height: 200px;
+	width: 250px;
+	margin-left: 55%;
+	position: absolute;
+} 
+
+#imgtext1  {
+	font-family: signboard;
+	font-size: 24px;
+	text-align: center;
+}
+
+
+#imgtext2  {
+	font-family: signboard;
+	font-size: 24px;
+	text-align: center;
+}
+
+#imgtext3  {
+	font-family: signboard;
+	font-size: 24px;
+	text-align: center;	
+}
+
+@media screen and (min-width: 550px) {
+    #mainimage {
+        width: 75%;
+    }
+    #image1 {
+		width: 20%;
+		order: -1;	
+	}	
+	#image2 {
+		width: 20%;
+		order: 1;
+		
+	}
+	#image3 {
+		width: 20%;
+		order: 2;
+		
+	}
+
+
+@media screen and (min-width: 700px) {
+    #mainimage {
+        width: 75%;
+    }
+    #image1 {
+		width: 20%;
+		order: -1;	
+	}	
+	#image2 {
+		width: 20%;
+		order: 1;
+		
+	}
+	#image3 {
+		width: 20%;
+		order: 2;
+		
+	}
+	
+}
+

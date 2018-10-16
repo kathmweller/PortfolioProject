@@ -89,7 +89,7 @@ hr {
 		width: 100%;
 		height: 300px;
 		background-color: blue;
-	}
+	}	
     #image1 {
 		width: 20%;
 		height: 150px;
@@ -104,6 +104,49 @@ hr {
 		width: 20%;
 		height: 150px;
 		order: 2;		
+	}
+}
+
+/* Galaxy S5 */
+@media screen and (min-width: 360px) {
+	#icon {
+		width: 25px;
+		height: 25px;
+		top: 3%;
+		left: 25%;
+		position: absolute;
+	}
+    #mainimage {
+		width: 100%;
+		height: 100px;
+		background-color: blue;
+	}	
+    #image1 {
+		width: 90%;
+		height: 50px;
+		order: -1;	
+	}	
+	#image2 {
+		width: 90%;
+		height: 50px;
+		order: 1;		
+	}
+	#image3 {
+		width: 90%;
+		height: 50px;
+		order: 2;		
+	}
+	.title {
+		font-size: 9px; 
+	}
+	#imgtext1  {
+		font-size: 15px;
+	}	
+	#imgtext2  {
+		font-size: 15px;
+	}	
+	#imgtext3  {
+		font-size: 15px;	
 	}
 }
 
@@ -131,6 +174,85 @@ img, embed, object, video {
 		width: 90%;
 		height: 150px;
 		order: 2;		
-	}	
+	}
 }
 
+/* iPad */
+@media screen and (min-width: 768px) {
+	#icon {
+		width: 25px;
+		height: 25px;
+		top: 2%;
+		left: 25%;
+		position: absolute;
+	}
+    #mainimage {
+		width: 100%;
+		height: 300px;
+		background-color: blue;
+	}
+    #image1 {
+		width: 90%;
+		height: 150px; 
+		order: -1;	
+	}	
+	#image2 {
+		width: 90%;
+		height: 150px;
+		order: 1;		
+	}
+	#image3 {
+		width: 90%;
+		height: 150px;
+		order: 2;		
+	}	
+	#imgtext1  {
+		font-size: 24px;
+	}	
+	#imgtext2  {
+		font-size: 24px;
+	}	
+	#imgtext3  {
+		font-size: 24px;	
+	}
+}
+
+/* iPad Pro */
+@media screen and (min-width: 1024px) {
+	#icon {
+		width: 25px;
+		height: 25px;
+		top: 1%;
+		left: 25%;
+		position: absolute;
+	}
+    #mainimage {
+		width: 100%;
+		height: 300px;
+		background-color: blue;
+	}
+    #image1 {
+		width: 90%;
+		height: 150px; 
+		order: -1;	
+	}	
+	#image2 {
+		width: 90%;
+		height: 150px;
+		order: 1;		
+	}
+	#image3 {
+		width: 90%;
+		height: 150px;
+		order: 2;		
+	}
+	#imgtext1  {
+		font-size: 30px;
+	}	
+	#imgtext2  {
+		font-size: 30px;
+	}	
+	#imgtext3  {
+		font-size: 30px;	
+	}
+}

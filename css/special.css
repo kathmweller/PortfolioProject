@@ -1,13 +1,11 @@
 
 body {
    background-color: rgb(234, 236, 236);
-} 
-
-.wrapper {
-   width: 100%;
+   margin: 0;
    display: flex;
-   flex-wrap: wrap;
-}
+   flex-direction: column;
+   width: 100%;
+} 
 
 hr { 
 	margin: 0 0 0 auto;
@@ -33,16 +31,19 @@ hr {
 	font-size: 18px; 
 }
 
+#mainimage {
+	margin-left: 25%;
+	height: 150px;
+	background-color: blue;
+}	
+
 .container {
+	display: flex;
 	float: right;
-	width: 75%;
-	display: flex-wrap;
-	flex-wrap: wrap;
 	margin-left: 25%;
 }
 
-
-.container1 {
+.container #container1 {
 	float: left;	
 	width: 33.33%;
 	margin: 0 auto;
@@ -50,7 +51,7 @@ hr {
 	padding-top: 20px;
 }
 
-.container2 {
+.container #container2 {
 	float: left;	
 	width: 33.33%;
 	margin: 0 auto;
@@ -58,7 +59,7 @@ hr {
 	padding-top: 20px;
 }
 
-.container3 {
+.container #container3 {
 	float: left;	
 	width: 33.33%;
 	margin: 0 auto;
@@ -84,141 +85,15 @@ hr {
 	text-align: center;	
 }
 
-@media screen and (min-width: 550px) {
-    #mainimage {
-		width: 100%;
-		height: 300px;
-		background-color: blue;
-	}	
-    #image1 {
-		width: 20%;
-		height: 150px;
-		order: -1;	
-	}	
-	#image2 {
-		width: 20%;
-		height: 150px;
-		order: 1;		
-	}
-	#image3 {
-		width: 20%;
-		height: 150px;
-		order: 2;		
-	}
+.linkImage{
+	width: 90%;
 }
 
-/* Galaxy S5 */
-@media screen and (min-width: 360px) {
-	#icon {
-		width: 25px;
-		height: 25px;
-		top: 3%;
-		left: 25%;
-		position: absolute;
+@media screen and (max-width: 575px) {
+	.container {
+	  flex-direction: column;
 	}
-    #mainimage {
-		width: 100%;
-		height: 100px;
-		background-color: blue;
-	}	
-    #image1 {
-		width: 90%;
-		height: 50px;
-		order: -1;	
-	}	
-	#image2 {
-		width: 90%;
-		height: 50px;
-		order: 1;		
-	}
-	#image3 {
-		width: 90%;
-		height: 50px;
-		order: 2;		
-	}
-	.title {
-		font-size: 9px; 
-	}
-	#imgtext1  {
-		font-size: 15px;
-	}	
-	#imgtext2  {
-		font-size: 15px;
-	}	
-	#imgtext3  {
-		font-size: 15px;	
-	}
-}
 
-img, embed, object, video {
-	max-width: 100%;
-}
-
-@media screen and (min-width: 700px) {
-    #mainimage {
-		width: 100%;
-		height: 300px;
-		background-color: blue;
-	}
-    #image1 {
-		width: 90%;
-		height: 150px; 
-		order: -1;	
-	}	
-	#image2 {
-		width: 90%;
-		height: 150px;
-		order: 1;		
-	}
-	#image3 {
-		width: 90%;
-		height: 150px;
-		order: 2;		
-	}
-}
-
-/* iPad */
-@media screen and (min-width: 768px) {
-	#icon {
-		width: 25px;
-		height: 25px;
-		top: 2%;
-		left: 25%;
-		position: absolute;
-	}
-    #mainimage {
-		width: 100%;
-		height: 300px;
-		background-color: blue;
-	}
-    #image1 {
-		width: 90%;
-		height: 150px; 
-		order: -1;	
-	}	
-	#image2 {
-		width: 90%;
-		height: 150px;
-		order: 1;		
-	}
-	#image3 {
-		width: 90%;
-		height: 150px;
-		order: 2;		
-	}	
-	#imgtext1  {
-		font-size: 24px;
-	}	
-	#imgtext2  {
-		font-size: 24px;
-	}	
-	#imgtext3  {
-		font-size: 24px;	
-	}
-}
-
-/* iPad Pro */
-@media screen and (min-width: 1024px) {
 	#icon {
 		width: 25px;
 		height: 25px;
@@ -226,33 +101,33 @@ img, embed, object, video {
 		left: 25%;
 		position: absolute;
 	}
-    #mainimage {
-		width: 100%;
-		height: 300px;
-		background-color: blue;
+
+	.title{
+		font-size: 9px;
 	}
-    #image1 {
-		width: 90%;
-		height: 150px; 
-		order: -1;	
-	}	
-	#image2 {
-		width: 90%;
-		height: 150px;
-		order: 1;		
-	}
-	#image3 {
-		width: 90%;
-		height: 150px;
-		order: 2;		
-	}
+
 	#imgtext1  {
-		font-size: 30px;
-	}	
-	#imgtext2  {
-		font-size: 30px;
-	}	
-	#imgtext3  {
-		font-size: 30px;	
-	}
+        font-size: 15px;
+    }    
+    #imgtext2  {
+        font-size: 15px;
+    }    
+    #imgtext3  {
+        font-size: 15px;    
+
+  }
+
+/* Galaxy S5 */
+@media screen and (min-width: 360px) {
+
+}
+
+/* iPad */
+@media screen and (min-width: 768px) {
+
+}
+
+/* iPad Pro */
+@media screen and (min-width: 1024px) {
+	
 }

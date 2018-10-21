@@ -16,7 +16,7 @@ hr {
 	margin-bottom: 20px;
 }
 
-#icon {
+#logo {
 	width: 50px;
 	height: 50px;
 	top: 4%;
@@ -33,60 +33,64 @@ hr {
 
 #mainimage {
 	margin-left: 25%;
-	height: 150px;
+	height: 200px;
 	background-color: blue;
+	
 }	
 
 .container {
 	display: flex;
 	float: right;
 	margin-left: 25%;
+
 }
 
-.container #container1 {
-	float: left;	
+.container #container1  {	
+	float: left;
 	width: 33.33%;
 	margin: 0 auto;
-	text-align: left;
 	padding-top: 20px;
 }
 
-.container #container2 {
+.container #container2  {
 	float: left;	
 	width: 33.33%;
 	margin: 0 auto;
-	text-align: center;
 	padding-top: 20px;
 }
 
-.container #container3 {
+.container #container3  {
 	float: left;	
 	width: 33.33%;
 	margin: 0 auto;
-	text-align: right;
 	padding-top: 20px;
 }
 
 #imgtext1  {
 	font-family: signboard;
-	font-size: 24px;
-	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	text-align: left;
+
 }
 
 #imgtext2  {
 	font-family: signboard;
-	font-size: 24px;
-	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	text-align: left;
 }
 
 #imgtext3  {
 	font-family: signboard;
-	font-size: 24px;
-	text-align: center;	
+	font-size: 36px;
+	font-weight: bold;
+	text-align: left;	
 }
 
 .linkImage{
 	width: 90%;
+	height: 150px;
 }
 
 @media screen and (max-width: 575px) {
@@ -94,7 +98,7 @@ hr {
 	  flex-direction: column;
 	}
 
-	#icon {
+	#logo {
 		width: 25px;
 		height: 25px;
 		top: 1%;
@@ -119,6 +123,7 @@ hr {
 
 /* Galaxy S5 */
 @media screen and (min-width: 360px) {
+
 
 }
 
